@@ -21,6 +21,37 @@
 <!--                    <generateOnlyServices>false</generateOnlyServices>-->
 <!--                </configuration>-->
             </plugin>
+
+
+            <plugin>
+                <groupId>com.github.jeluard</groupId>
+                <artifactId>plantuml-maven-plugin</artifactId>
+                <version>1.2</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <verbose>true</verbose>
+                    <sourceFiles>
+                        <directory>${basedir}</directory>
+                        <includes>
+                            <include>target/generated/**/*.puml</include>
+                        </includes>
+                    </sourceFiles>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.sourceforge.plantuml</groupId>
+                        <artifactId>plantuml</artifactId>
+                        <version>8057</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 

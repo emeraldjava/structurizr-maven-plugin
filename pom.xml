@@ -42,29 +42,6 @@
             <artifactId>structurizr-export</artifactId>
             <version>1.7.0</version>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>pl.zalas</groupId>-->
-<!--            <artifactId>structurizr-cli</artifactId>-->
-<!--            <version>0.0.2</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>com.structurizr</groupId>-->
-<!--            <artifactId>structurizr-client</artifactId>-->
-<!--            <version>1.16.1</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.22</version>
-        </dependency>
-
-
-
-
     </dependencies>
 
     <build>
