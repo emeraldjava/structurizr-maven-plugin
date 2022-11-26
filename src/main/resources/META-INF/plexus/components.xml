@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+    <components>
+        <component>
+            <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+            <role-hint>zip</role-hint>
+            <implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping</implementation>
+            <configuration>
+                <phases>
+<!--                    <generate-resources>com.bearingpoint.eircom:productconfig-maven-plugin:generate</generate-resources>-->
+                    <package>io.github.emeraldjava.structurizr:structurizr-maven-plugin:export</package>
+<!--                    <install>org.apache.maven.plugins:maven-install-plugin:install</install>-->
+<!--                    <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>-->
+                    <!--<export>org.apache.maven.plugins:maven-deploy-plugin:export</export>-->
+                </phases>
+            </configuration>
+        </component>
+    </components>
+</component-set>
